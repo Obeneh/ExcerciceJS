@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercice 7</title>
+</head>
+
+<body>
+    <script>
+        // Écrivez un programme JavaScript qui prend un tableau de mots et affiche le mot le plus long dans la console.
+        const tableau = ["Anti", "Consti", "tutionnel", "lement"]
+        let mot = ""
+        for (i = 0; i < tableau.length; i++) {
+            if (mot.length < tableau[i].length)
+                mot = tableau[i]
+        }
+        console.log("Le mot le plus long est : " + mot)
+    </script>
+</body>
+
+</html>
