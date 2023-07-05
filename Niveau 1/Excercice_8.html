@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercice 8</title>
+</head>
+
+<body>
+    <script>
+        //Écrivez un programme JavaScript qui prend un mot et vérifie s'il s'agit d'un palindrome (c'est-à-dire s'il peut être lu de la même manière de gauche à droite et de droite à gauche).
+        const mot = prompt("Donnez votre mot ?")
+        const tableau = Array.from(mot)
+        console.log(tableau)
+        if (tableau == tableau.reverse) {
+            console.log("Ce mot est un Palindrome")
+        } else
+            console.log("Ce mot n'est pas un Palindrome")
+    </script>
+</body>
+
+</html>
