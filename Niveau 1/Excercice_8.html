@@ -11,11 +11,12 @@
     <script>
         //Écrivez un programme JavaScript qui prend un mot et vérifie s'il s'agit d'un palindrome (c'est-à-dire s'il peut être lu de la même manière de gauche à droite et de droite à gauche).
         const mot = prompt("Donnez votre mot ?")
-        const tableau = Array.from(mot)
-        console.log(tableau)
-        uaelbat = tableau.reverse()
-        console.log(uaelbat)
-        if (tableau == uaelbat) {
+        const motRev = mot.split('').reverse().join('')
+        console.log(mot)
+        console.log(motRev)
+        // uaelbat = tableau.reverse() La comparaison de tableau renvoie toujours true
+        // console.log(uaelbat)
+        if (mot == motRev) {
             console.log("Ce mot est un Palindrome")
         } else {
             console.log("Ce mot n'est pas un Palindrome")
