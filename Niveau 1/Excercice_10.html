@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercice 10</title>
+</head>
+
+<body>
+    <script>
+        //Écrivez un programme JavaScript qui calcule et affiche les premiers n termes de la suite de Fibonacci, où n est saisi par l'utilisateur.
+        var user = parseInt(prompt("Donnez votre N pour l'affichage de Fibonacci ?"))
+        Fibo1 = 0
+        Fibo2 = 1
+        console.log(Fibo1)
+        console.log(Fibo2)
+        for (i = 0; i < user; i++)
+            Fibo = Fibo1 + Fibo2
+            Fibo1 = Fibo2
+            Fibo2 = Fibo
+            console.log(Fibo)
+    </script>
+</body>
+
+</html>
