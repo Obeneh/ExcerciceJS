@@ -12,15 +12,17 @@
         //Écrivez un programme JavaScript qui génère un nombre aléatoire entre 1 et 100, puis demande à l'utilisateur de deviner le nombre.
         //Le programme doit afficher "Trop grand !" ou "Trop petit !" selon que la proposition de l'utilisateur est supérieure ou inférieure au nombre généré,
         // ou "Bravo !" si l'utilisateur devine le nombre correctement.
-        var rand = Math.floor(Math.random() * (101 - 1) + 1)
+        var rand = Math.floor(Math.random() * (100) + 1)
         console.log(rand)
         var user = parseInt(prompt('Donnez votre nombre ?'))
-        if (user < rand) {
-            user = parseInt(prompt('Trop petit essaye encore !'))
-        } else if (user > rand) {
-            user = parseInt(prompt('Trop grand essaye encore !'))
-        } else {
-            alert("BRAVO !")
+        while (user != rand) {
+            if (user < rand) {
+                user = parseInt(prompt('Trop petit essaye encore !'))
+            } else if (user > rand) {
+                user = parseInt(prompt('Trop grand essaye encore !'))
+            } else {
+                alert("BRAVO !")
+            }
         }
     </script>
 </body>
