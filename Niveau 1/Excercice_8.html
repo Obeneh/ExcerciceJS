@@ -13,7 +13,7 @@
         const mot = prompt("Donnez votre mot ?")
         const tableau = Array.from(mot)
         console.log(tableau)
-        if (tableau == tableau.reverse) {
+        if (tableau == tableau.reverse()) {
             console.log("Ce mot est un Palindrome")
         } else
             console.log("Ce mot n'est pas un Palindrome")
