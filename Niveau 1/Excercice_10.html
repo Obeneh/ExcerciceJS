@@ -13,13 +13,14 @@
         var user = parseInt(prompt("Donnez votre N pour l'affichage de Fibonacci ?"))
         Fibo1 = 0
         Fibo2 = 1
-        console.log(Fibo1)
-        console.log(Fibo2)
-        for (i = 0; i < user; i++)
+        let i=0
+        while (i < user){
+            i++
             Fibo = Fibo1 + Fibo2
             Fibo1 = Fibo2
             Fibo2 = Fibo
             console.log(Fibo)
+        }
     </script>
 </body>
 
