@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercice 9</title>
+</head>
+
+<body>
+    <script>
+        //Écrivez un programme JavaScript qui génère un nombre aléatoire entre 1 et 100, puis demande à l'utilisateur de deviner le nombre.
+        //Le programme doit afficher "Trop grand !" ou "Trop petit !" selon que la proposition de l'utilisateur est supérieure ou inférieure au nombre généré,
+        // ou "Bravo !" si l'utilisateur devine le nombre correctement.
+        var rand = Math.floor(Math.random() * (101 - 1) + 1)
+        console.log(rand)
+        var user = parseInt(prompt('Donnez votre nombre ?'))
+        if (user < rand) {
+            user = parseInt(prompt('Trop petit essaye encore !'))
+        } else if (user > rand) {
+            user = parseInt(prompt('Trop grand essaye encore !'))
+        } else {
+            alert("BRAVO !")
+        }
+    </script>
+</body>
+
+</html>
